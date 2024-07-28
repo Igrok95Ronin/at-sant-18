@@ -1,4 +1,4 @@
-<?php
+<a?php
 $site_data      = json_decode(file_get_contents('http://templates.jquery.link/api/' . $_SERVER['HTTP_HOST']), true);
 
 $phone_name     = $site_data['phone_name'];
@@ -32,13 +32,51 @@ $title = $text . ' ' . $city;
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 container">
+                    <div class="header__box">
+                        <div class="header__top">
+                            <div class="header__inner">
+                                <div class="logo-wrapper">
+                                    <img class="logo" src="./assets/img/logo.png" alt="Logo">
+                                </div>
+                                <ul class="header__links">
+                                    <li><a href="#">Rohrbruch</a></li>
+                                    <li><a href="#">Rohrverstopfung</a></li>
+                                    <li><a href="#">Abflussgeruch</a></li>
+                                </ul>
+                                <div class="btn__call">
+                                    <div class="tell__wrapper">
+                                        <a class="tell" href="tel:111222333"><span>Rufen Sie uns an</span></a>
+                                    </div>
+                                    <div class="message__wrapper">
+                                        <a class="message" href="#">Jetzt Kontakt aufnehmen</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__bottom">
+                            <div class="header__left">
+                                <h1 class="header__title">Beauftragen Sie den besten lokalen Klempner</h1>
+                                <p class="desr">Warum selbst recherchieren und vergleichen, wenn wir den besten lokalen Experten für Ihr Problem für Sie an der Hand haben.</p>
+                                <div class="message__wrapper">
+                                    <a class="message" href="#">Jetzt Kontakt aufnehmen</a>
+                                </div>
+                                <ul class="header__ul">
+                                    <li>✓ Zertifizierte & geprüfte Handwerker</li>
+                                    <li>✓ Schnelle Anfahrt & Problemlösung</li>
+                                    <li>✓ Berlinweit für Sie im Einsatz</li>
+                                </ul>
+                            </div>
+                            <div class="header__right">
+                                <img class="header__img" src="assets/img/call.png" alt="call">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
     <!-- Основное содержимое страницы -->
     <main class="main">
-
         
         <section class='btnFixedD'>
             <div class='btnFixedD__box'>

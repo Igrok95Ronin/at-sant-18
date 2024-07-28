@@ -33,7 +33,6 @@ a{
     padding: 0;
 }
 body{
-    outline: 1px solid red;
     margin: auto;
     padding: 0;
     font: 16px Helvetica,Arial,sans-serif;
@@ -49,5 +48,13 @@ body{
 $btnColorFixed: var(--mainColor);
 
 @mixin btn {
-
+    background-color: var(--mainColor);
+    color: #fff !important;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 20px;
+    transition: .3s;
+    &:hover{
+        background-color: #0380a7;
+    }
 }
