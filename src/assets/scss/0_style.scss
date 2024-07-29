@@ -43,6 +43,7 @@ body{
 
 :root {
     --mainColor: #02b1e4;
+    --colorText: #5d6584;
 }
 
 $btnColorFixed: var(--mainColor);
@@ -51,7 +52,7 @@ $btnColorFixed: var(--mainColor);
     background-color: var(--mainColor);
     color: #fff !important;
     font-weight: 700;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 20px;
     transition: .3s;
     &:hover{

@@ -1,4 +1,4 @@
-<a?php
+<?php
 $site_data      = json_decode(file_get_contents('http://templates.jquery.link/api/' . $_SERVER['HTTP_HOST']), true);
 
 $phone_name     = $site_data['phone_name'];
@@ -25,8 +25,6 @@ $title = $text . ' ' . $city;
 </head>
 
 <body>
-
-
     <!--Шапка сайта-->
     <header class="header">
         <div class="container-fluid">
@@ -77,6 +75,60 @@ $title = $text . ' ' . $city;
     </header>
     <!-- Основное содержимое страницы -->
     <main class="main">
+        <section class="comments">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 container">
+                        <div class="comments__box">
+                            <div class="comments__inner">
+                                <div class="comments__stars">
+                                    <div class="comments__star"></div>
+                                    <div class="comments__star"></div>
+                                    <div class="comments__star"></div>
+                                    <div class="comments__star"></div>
+                                    <div class="comments__star"></div>
+                                </div>
+                                <p class="comments__txt-strong">Schneller und besser als erhofft</p>
+                                <p class="comments__txt">Bereits ein Tag nach der Anfrage, kam Schwabenprotest und hat sich innerhalb von 30 Minuten um alles gekümmert. Super netter Mitarbeiter und super schnelle Arbeit!</p>
+                            </div>
+                            <div class="comments__inner">
+                                <div class="comments__stars">
+                                    <div class="comments__star"></div>
+                                    <div class="comments__star"></div>
+                                    <div class="comments__star"></div>
+                                    <div class="comments__star"></div>
+                                    <div class="comments__star"></div>
+                                </div>
+                                <p class="comments__txt-strong">Gut gelaufen!</p>
+                                <p class="comments__txt">Ich wurde sehr freundlich zu McKill in Bremen vermittelt - eine Firma mit tollem Team, ebenfalls sehr freundlich und kompetent. Vielen Dank!</p>
+                            </div>
+                            <div class="comments__inner">
+                                <div class="comments__stars">
+                                    <div class="comments__star"></div>
+                                    <div class="comments__star"></div>
+                                    <div class="comments__star"></div>
+                                    <div class="comments__star"></div>
+                                    <div class="comments__star"></div>
+                                </div>
+                                <p class="comments__txt-strong">Unser Wespennest in der Hausverkleidung</p>
+                                <p class="comments__txt">Unser Wespennest in der Hausverkleidung wurde durch einen sehr netten und kompetenten Mitarbeiter beseitigt. Wir waren sehr zufrieden auch über die Reaktionszeit der Firma.</p>
+                            </div>
+                            <div class="comments__inner">
+                                <div class="comments__stars">
+                                    <div class="comments__star"></div>
+                                    <div class="comments__star"></div>
+                                    <div class="comments__star"></div>
+                                    <div class="comments__star"></div>
+                                    <div class="comments__star"></div>
+                                </div>
+                                <p class="comments__txt-strong">Rundum gelungen</p>
+                                <p class="comments__txt">Es wurde super schnell auf die Anfrage reagiert. Der Rückruf erfolgte innerhalb von zwei Stunden. Direkt am Folgetag wurde ein Termin vereinbart und die Wespen beseitigt. Das Telefonat war super nett und meine Mutter fühlte sich gut beraten.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         <section class='btnFixedD'>
             <div class='btnFixedD__box'>

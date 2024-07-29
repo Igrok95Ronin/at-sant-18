@@ -30,7 +30,7 @@
     li{
         a{
             transition: .3s;
-            color: #5d6584;
+            color: var(--colorText);
             &:hover{
                 color: #404764;
             }
@@ -96,6 +96,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    color: var(--colorText);
 }
 .header__right {
     max-width: 100%;

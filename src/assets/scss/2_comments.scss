@@ -1,0 +1,61 @@
+.comments {
+    padding: 50px 0;
+}
+.comments__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.comments__inner {
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 14px;
+    height: 188px;
+    transition: .4s;
+    &:hover {
+        background-color: #e5e5e5;
+        border: .05em solid #005aa0;
+        height: 230px;
+        .comments__txt-strong,
+        .comments__txt{
+            -webkit-line-clamp: unset;
+        }
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+.comments__stars {
+}
+.comments__star{
+    mask-image: url('../icons/star.svg');
+    mask-size: 1em 1em;
+    background-color: #ffdc0f;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+}
+.comments__txt-strong {
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1; /* Количество видимых строк */
+    transition: .3s;
+}
+.comments__txt {
+    line-height: 20px; /* Высота строки */
+    color: var(--colorText);
+    max-height: 100px; /* Максимальная высота блока */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4; /* Количество видимых строк */
+    text-overflow: ellipsis;
+}
